@@ -227,7 +227,7 @@ MACRO_CONFIG_STR(ClDummy7SkinEyes, dummy7_skin_eyes, protocol7::MAX_SKIN_ARRAY_S
 // MACRO_CONFIG_STR(ClCensorUrl, cl_censor_url, 100, "https://info.ddnet.org/censor.json", CFGFLAG_CLIENT | CFGFLAG_SAVE, "URL used to download words to censor (must start with https://)")
 
 MACRO_CONFIG_INT(UiPage, ui_page, 6, 6, 13, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Interface page")
-MACRO_CONFIG_INT(UiSettingsPage, ui_settings_page, 0, 0, 10, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Interface settings page")
+MACRO_CONFIG_INT(UiSettingsPage, ui_settings_page, 0, 0, 11, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Interface settings page")
 MACRO_CONFIG_INT(UiToolboxPage, ui_toolbox_page, 0, 0, 2, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Toolbox page")
 MACRO_CONFIG_STR(UiServerAddress, ui_server_address, 1024, "localhost:8303", CFGFLAG_CLIENT | CFGFLAG_SAVE | CFGFLAG_INSENSITIVE, "Interface server address")
 MACRO_CONFIG_INT(UiMousesens, ui_mousesens, 200, 1, 100000, CFGFLAG_SAVE | CFGFLAG_CLIENT, "Mouse sensitivity for menus/editor")
@@ -739,6 +739,15 @@ MACRO_CONFIG_COL(ClHookCollColorNoColl, cl_hook_coll_color_no_coll, 65407, CFGFL
 MACRO_CONFIG_COL(ClHookCollColorHookableColl, cl_hook_coll_color_hookable_coll, 6401973, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Specifies the color of a hookline that hits hookable tiles.")
 MACRO_CONFIG_COL(ClHookCollColorTeeColl, cl_hook_coll_color_tee_coll, 2817919, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Specifies the color of a hookline that hits tees.")
 MACRO_CONFIG_COL(ClHookCollTipColor, cl_hook_coll_tip_color, 2150367104, CFGFLAG_CLIENT | CFGFLAG_SAVE | CFGFLAG_COLALPHA, "Specifies the color of the hookline tip")
+
+MACRO_CONFIG_INT(LClientAimbot, lclient_aimbot, 0, 0, 1, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Enable LClient aimbot")
+MACRO_CONFIG_INT(LClientAimbotFov, lclient_aimbot_fov, 90, 1, 360, CFGFLAG_CLIENT | CFGFLAG_SAVE, "LClient aimbot FOV angle")
+MACRO_CONFIG_INT(LClientAimbotSilent, lclient_aimbot_silent, 0, 0, 1, CFGFLAG_CLIENT | CFGFLAG_SAVE, "LClient aimbot silent mode")
+MACRO_CONFIG_INT(LClientAimbotHookVisible, lclient_aimbot_hook_visible, 0, 0, 1, CFGFLAG_CLIENT | CFGFLAG_SAVE, "LClient aimbot autohook when target is visible")
+MACRO_CONFIG_INT(LClientAimbotEdgeScan, lclient_aimbot_edge_scan, 0, 0, 1, CFGFLAG_CLIENT | CFGFLAG_SAVE, "LClient aimbot edge scan")
+MACRO_CONFIG_INT(LClientAimbotAccuracy, lclient_aimbot_accuracy, 10, 1, 50, CFGFLAG_CLIENT | CFGFLAG_SAVE, "LClient aimbot edge scan accuracy")
+MACRO_CONFIG_INT(LClientEsp, lclient_esp, 0, 0, 1, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Enable LClient ESP")
+MACRO_CONFIG_INT(LClientEspDrawFov, lclient_esp_draw_fov, 0, 0, 1, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Draw LClient aimbot FOV lines")
 
 MACRO_CONFIG_INT(ClChatTeamColors, cl_chat_teamcolors, 1, 0, 1, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Show names in chat in team colors")
 MACRO_CONFIG_INT(ClChatReset, cl_chat_reset, 1, 0, 1, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Reset chat when pressing escape")

@@ -2660,6 +2660,8 @@ if(CLIENT)
     components/console.h
     components/controls.cpp
     components/controls.h
+    components/lclient.cpp
+    components/lclient.h
     components/countryflags.cpp
     components/countryflags.h
     components/damageind.cpp
@@ -2714,6 +2716,7 @@ if(CLIENT)
     components/menus_settings_ddnet.cpp
     components/menus_settings_general.cpp
     components/menus_settings_graphics.cpp
+    components/menus_settings_lclient.cpp
     components/menus_settings_language.cpp
     components/menus_settings_player.cpp
     components/menus_settings_sound.cpp

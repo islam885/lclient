@@ -128,6 +128,7 @@ void CGameClient::OnConsoleInit()
 					      &m_Binds,
 					      &m_Binds.m_SpecialBinds,
 					      &m_Controls,
+					      &m_LClient,
 					      &m_Camera,
 					      &m_Sounds,
 					      &m_Voting,
@@ -527,6 +528,7 @@ int CGameClient::OnSnapInput(int *pData, bool Dummy, bool Force)
 {
 	if(!Dummy)
 	{
+		m_LClient.OnSnapInput(pData);
 		return m_Controls.SnapInput(pData);
 	}
 	if(m_aLocalIds[!g_Config.m_ClDummy] < 0)

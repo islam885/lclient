@@ -579,6 +579,9 @@ protected:
 	// found in menus_settings_credits.cpp
 	void RenderSettingsCredits(CUIRect MainView);
 
+	// found in menus_settings_lclient.cpp
+	void RenderSettingsLClient(CUIRect MainView);
+
 	// found in menus_settings_ddnet.cpp
 	void RenderSettingsDDNet(CUIRect MainView);
 
@@ -717,6 +720,7 @@ public:
 		SETTINGS_DDNET,
 		SETTINGS_ASSETS,
 		SETTINGS_CREDITS,
+		SETTINGS_LCLIENT,
 
 		SETTINGS_LENGTH,
 	};
